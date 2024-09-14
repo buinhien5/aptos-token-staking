@@ -21,17 +21,9 @@ Reward Calculation
 
 *   The reward index is first calculated as the amount of reward per staked asset.
     
-    bash
-    
-    Copy code
-    
     `reward index = old_index + (current_ts - last_update_ts) * rps / total_stake`
     
 *   Then, rewards for a user are calculated:
-    
-    bash
-    
-    Copy code
     
     `reward = user_stake * (reward_index - user_index_at_last_claim)`
     
